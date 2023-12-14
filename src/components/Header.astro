@@ -1,0 +1,31 @@
+---
+import MainMenu from '@components/theme/MainMenu.astro';
+import Logo from '@components/theme/Logo.astro';
+---
+<header id="navbar">
+	<div class="container animate-fade-in">
+		<Logo class="logo" /> 
+		<nav id="nav-menu">
+			<div class="fondo-bar"></div> 
+			<MainMenu class="menu-navbar" />
+		
+		</nav>
+	</div>	
+</header>
+
+<style>
+	#navbar { @apply ease-out duration-300 z-2 fixed top-0 w-full -drop-shadow-md bg-zinc-500 ;}
+	#navbar .container { @apply mx-auto flex icb h-16 lg:h-24 transition-all 	;}
+	#navbar.sticky { @apply  ease-out duration-700 top-0 bg-zinc-50 	;}
+			
+	#navbar.sticky.base{ @apply bg-black ease-out duration-700 top-0 ; }
+	#navbar.sticky.ocultar{ @apply bg-black ease-out duration-300 -top-20 ;}
+	#navbar.sticky .container { @apply h-16 ease-out duration-300 ;}
+	
+	#nav-menu { @apply relative gap-4 lg:w-60vw items-center hidden lg:flex justify-between text-white ;}
+	#nav-menu .fondo-bar { @apply hidden absolute lg:block  left-0 w-screen h-16 bg-brand-gray -z-1; }
+
+	#navbar a .logo { @apply transition-all h-14 md:h-16 lg:h-24 ;}
+	#navbar.sticky a .logo { @apply h-13 md:h-15;}
+</style>
+

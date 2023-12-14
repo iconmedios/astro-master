@@ -1,1 +1,23 @@
-<h1>Acerca</h1>
+---
+import Layout from "@layouts/Layout.astro";
+
+const datapage = {
+    titlePage:"Acerca de ",
+    description:" Subtitulo General"
+}
+console.log(datapage)
+
+const seo = {
+	title:datapage.titlePage,
+	description: datapage.description,
+};
+---
+
+<Layout  {seo}>
+	<section class="" >
+		<div class="container">
+			<h1>{datapage.titlePage} Custom</h1>
+			<p>{datapage.description}</p>
+		</div>
+	</section>
+</Layout>

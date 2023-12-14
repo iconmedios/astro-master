@@ -1,0 +1,51 @@
+{
+    "sitedata":[
+        {   
+            "sitename"      :"Standout Stands & Stages®",
+            "slogan"        :"Diseñamos el poder de atracción de tu marca®",
+            "description"   :"Diseño y fabricación de stands y escenarios, transportación ensamble y desensable de stans",
+            "address"       :"Insurgentes Sur 863 Piso 7, Col. Nápoles 03810 CDMX",
+            "domain"        :"https://www.standout.com.mx/",
+            "twitter_site"  :"@iconmedios",
+            "image_site"    :"/images/social.jpg"
+            
+        }
+        ],
+    "menus":{
+
+
+
+        "main":[
+            {"title":"Diseño de Stands",         "link":"/stands" },
+            {"title":"Escenografías",            "link":"/escenografias" },
+            {"title":"Ferias y Expos",           "link":"/ferias-y-exposiciones" },
+            {"title":"Audio & Video",            "link":"/produccion-de-audiovisual" }
+        ],
+        "services":[
+            {"title":"Stands Institucionales",   "link":"/stands" },
+            {"title":"Módulos de Registro",      "link":"/escenografias" },
+            {"title":"Arcos de Bienvenida",      "link":"/ferias-y-exposiciones" },
+            {"title":"Administración de ferias", "link":"/produccion-de-audiovisual" },
+            {"title":"Aviso de Privacidad",      "link":"/aviso-de-privacidad" }
+        ],
+        "legal":[
+            {"name":"Aviso de Privacidad",      "link":"/aviso-de-privacidad" },
+            {"name":"Descargar Presentación",   "link":"https://www.standout.com.mx/wp-content/uploads/2020/05/STANDOUT_PRESENTA_V1.pdf" }
+      
+        ]
+      
+    },    
+    "contactData":[ 
+        { "type":"55 3955 1245",                "url":"tel:5539551245",                                                     "icon":"phone-in-talk-outline" },
+        { "type":"WhatsApp",                    "url":"https://api.whatsapp.com/send?phone=5215539551245",                  "icon":"baseline-whatsapp"},
+        { "type":"contacto@standout.com",       "url":"mailto:contacto@standout.com",                                       "icon":"outline-mail"}
+    
+        ],      
+    "socialData":[
+        { "redname":"Facebook",                 "url":"https://www.facebook.com/standoutstands1/",                           "icon":"circle_facebook"},
+        { "redname":"Twitter",                  "url":"https://twitter.com/JorgeAcevesM1",                                   "icon":"circle_twitter"},
+        { "redname":"Instagram",                "url":"https://www.instagram.com/standout_stands/",                          "icon":"circle_instagram"}, 
+        { "redname":"Youtube",                  "url":"https://www.youtube.com/channel/UC95tsZ8gLyXuYKkyEgnhkLw",            "icon":"circle_youtube"},
+        { "redname":"Linkedin",                 "url":"https://linkedin.com/",                                               "icon":"circle_linkedin"}
+    ]        
+}   

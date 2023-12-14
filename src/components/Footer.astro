@@ -1,0 +1,38 @@
+---
+import ColumFooter from "./theme/ColumFooter.astro";
+import MainMenu from "./theme/MainMenu.astro";
+---
+
+<footer id="footer" class="w-full bg-zinc-8 ">
+  
+    <div class="container sm:py-16  ">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 ">
+
+                    <ColumFooter columtitle="Acerca de">
+                        <p>lorem interdum. Quisque erat sem, pellentesque quis auctor ut, faucibus et dui. Etiam et aliquam ligula. Integer ut tincidunt enim. Aliquam erat volutpat. Nunc finibus, neque in tincidunt semper, massa mauris ullamcorper magna, vel tristique neque sapien sit amet nisl.</p>
+                    </ColumFooter>
+
+                    <ColumFooter columtitle="Servicios">
+                        <MainMenu class="footer-class" /> 
+                    </ColumFooter>
+
+                    <ColumFooter columtitle="Información">
+                        <MainMenu class="footer-class" /> 
+                    </ColumFooter>
+
+                    <ColumFooter columtitle="Contacto" >
+                        <MainMenu class="footer-class" /> 
+                    </ColumFooter>
+        
+             
+        </div>
+        
+    </div>
+  
+    
+    <p class="text-center font-500 bg-zinc-200 py-8 "><span class="text-red-600">STAND</span>OUT  | STANDS & STAGES   ®  TODOS LOS DERECHOS RESERVADOS</p>  
+    <div class="bg-brand-base  sm:bg-black md:bg-brand-red lg:bg-brand-gray xl:bg-brand-base h-2"></div>
+    
+</footer>
+
+

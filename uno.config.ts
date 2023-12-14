@@ -14,7 +14,10 @@ export default defineConfig({
     
    
   ],
-  shortcuts: [],
+  shortcuts:{
+    "container":"mx-auto w-92% xl:1280px ",
+    "seccion-base":"py-12 md:py-16 lg:py-28"
+  },
  
   transformers: [
     transformerDirectives(),

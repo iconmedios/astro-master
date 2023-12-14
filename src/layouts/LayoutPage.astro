@@ -1,0 +1,13 @@
+---
+import Layout from "./Layout.astro";
+import type { Props as SEOProps } from '@components/SEO.astro';
+export interface Props {
+	seo?: SEOProps;
+	titlepage: string;
+}
+const { seo, titlepage } = Astro.props as Props;
+
+---
+<Layout {seo}>
+<h1>{titlepage}</h1>
+</Layout>
