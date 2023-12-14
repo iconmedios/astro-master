@@ -16,7 +16,7 @@ const { seo } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="es" data-theme='dark'>
+<html lang="es" data-theme="">
 	<head>
 			
 		<SEO {...seo} />
@@ -78,7 +78,7 @@ const { seo } = Astro.props;
 
 	body{
 		font-family: sans-serif;
-		font-size: 16px;
+		font-size: 1em;
 		position: relative;
 		background-color: var(--background-color);
 		color: var(--text-color);
@@ -93,7 +93,7 @@ const { seo } = Astro.props;
 
 	.tx2 {font-size: clamp( 3.4em, 6vw, 9em );}
 	.tx1 {font-size: clamp( 2.4em, 4.2vw, 7em );}
-	h1, h2, h3, h4, h5, h6{ @apply leading-1.2em text-brand-dark ;}
+	h1, h2, h3, h4, h5, h6{ @apply leading-1.2em;}
 	  /* font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );  font-size: clamp( 2.4em, 4.2vw, 6.4em ); */
 	h1{@apply text-2em sm:text-2.0vw lg:text-3.0vw ;} 
 	h2{@apply text-1.8em lg:text-2.4vw ;}

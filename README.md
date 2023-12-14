@@ -7,3 +7,8 @@ npm install -D @unocss/transformer-directives
 
 Aliases Options
 https://docs.astro.build/en/guides/typescript/
+
+
+
+### Comandos
+Salto de Linea ALT-Z

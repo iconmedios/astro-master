@@ -10,4 +10,7 @@ export default defineConfig({
             injectReset: true
         }),
       ],
+    prefetch: {
+        defaultStrategy: 'viewport'
+    } 
 });

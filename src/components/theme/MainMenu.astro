@@ -1,28 +1,18 @@
 ---
 import { menus } from "@data/site.json"
-import HeaderLink from './HeaderLink.astro';
-const nav = menus.main
+import HeaderLink from './LinkBase.astro';
+const menu = menus.main
+const menuFoo = menus.services
 
 const { class:menuClass } = Astro.props;
+
 ---
 <ul class={menuClass}>
     {
-        nav.map( ({title, link })=> (
-            <li>
-        <HeaderLink href={link}>{title}</HeaderLink></li>
+        menu.map( ({title, link })=> (
+            
+        <li><HeaderLink href={link}>{title}</HeaderLink></li>
         
         ))
     }
 </ul>
-
-
-<style>
-ul.menu-navbar {@apply flex font-300 gap-4 pl-10    ;}
-ul.menu-navbar li a{ @apply text-white hover:op-70  ;}
-
-ul.menu-mob { @apply grid gap-2 py-12 font-500 	;}
-ul.menu-mob li a{ @apply text-5 px-2 hover:text-brand-light hover:bg-brand-base ;}
-
-
-
-</style>
