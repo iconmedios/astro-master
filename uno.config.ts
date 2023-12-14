@@ -15,7 +15,7 @@ export default defineConfig({
    
   ],
   shortcuts:{
-    "container":"mx-auto w-92% xl:1280px ",
+    "container":"mx-auto w-92% lg:1220px ",
     "seccion-base":"py-12 md:py-16 lg:py-28"
   },
  

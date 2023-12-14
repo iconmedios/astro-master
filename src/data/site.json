@@ -16,10 +16,11 @@
 
 
         "main":[
-            {"title":"Diseño de Stands",         "link":"/stands" },
-            {"title":"Escenografías",            "link":"/escenografias" },
-            {"title":"Ferias y Expos",           "link":"/ferias-y-exposiciones" },
-            {"title":"Audio & Video",            "link":"/produccion-de-audiovisual" }
+            {"title":"Inicio",         "link":"/" },
+            {"title":"Acerca de",            "link":"/acerca" },
+            {"title":"Servicios",           "link":"/servicios" },
+            {"title":"Productos",            "link":"/productos" },
+            {"title":"Contacto",            "link":"/contacto" }
         ],
         "services":[
             {"title":"Stands Institucionales",   "link":"/stands" },
