@@ -1,12 +1,7 @@
 ---
-export interface Props {
-		columtitle?: string;
-}
-
-
-const { columtitle } = Astro.props;
+const { columtitle, class: className  } = Astro.props;
 ---
-<div class="py-4 md:py-8 lg:py-16 text-zinc-3">
+<div  class:list={["py-4 md:py-8 lg:py-16 text-zinc-3", className]}>
     <h5 class="mb-4">{columtitle}</h5>
     <slot/>
 </div>

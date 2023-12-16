@@ -1,5 +1,6 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import ArqTheme from "@components/theme/arq/ArqTheme.astro";
+import LayoutPage from "@layouts/LayoutPage.astro";
 
 const datapage = {
     titlePage:"Productos",
@@ -13,11 +14,10 @@ const seo = {
 };
 ---
 
-<Layout  {seo}>
+<LayoutPage  {seo} titlepage={datapage.titlePage} subtitle={datapage.description}  >
 	<section class="seccion-base" >
 		<div class="container">
-			<h1>{datapage.titlePage} Custom</h1>
-			<p>{datapage.description}</p>
+				
 		</div>
 	</section>
-</Layout>
+</LayoutPage>

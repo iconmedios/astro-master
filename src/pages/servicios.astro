@@ -1,5 +1,5 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import LayoutPage from "@layouts/LayoutPage.astro";
 
 const datapage = {
     titlePage:"Servicios",
@@ -12,11 +12,11 @@ const seo = {
 };
 ---
 
-<Layout  {seo}>
-	<section class="seccion-base" >
+<LayoutPage   {seo} titlepage={datapage.titlePage} subtitle={datapage.description}>
+	<section class="seccion-base pale" >
 		<div class="container">
 			<h1>{datapage.titlePage} Custom</h1>
 			<p>{datapage.description}</p>
 		</div>
 	</section>
-</Layout>
+</LayoutPage >

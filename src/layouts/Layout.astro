@@ -1,124 +1,43 @@
 ---
-import '@unocss/reset/normalize.css'
+import "@unocss/reset/normalize.css";
+import StyleBase from "@components/theme/StyleBase.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 
-import Header from '@components/Header.astro';
-import Footer from '@components/Footer.astro';
-
-import SEO from '@components/SEO.astro'
-import type { Props as SEOProps } from '@components/SEO.astro';
+import SEO from "@components/SEO.astro";
+import type { Props as SEOProps } from "@components/SEO.astro";
 
 export interface Props {
 	seo?: SEOProps;
 }
 
 const { seo } = Astro.props;
-
 ---
 
-<!DOCTYPE html>
-<html lang="es" data-theme="">
+<!doctype html >
+<html lang="es" >
 	<head>
-			
 		<SEO {...seo} />
-	
 	</head>
-	<body>
-		
-		
+	<body data-theme="light">
 		<Header />
 		<main>
 			<slot />
 		</main>
-		<Footer />	
-	
+		<Footer />
 
-
-		
-		<script src="../app.js" ></script>
+		<script src="../app.js"></script>
 		<script is:inline src="/assets/js/fslightbox.js"></script>
-		
 	</body>
 </html>
-<style is:global>
-	:root {
-		--brand:		#007DA5 ;
-  		--brand-red:	#E1251B ;
-		--brand-gray:	#585459 ;
-		--brand-black:	#121212 ;
-		--brand-light:	#F4F4F4 ;
-		--bg-main: url('/assets/images/bg.jpg');
-		--bg-main-webp: url('/assets/images/bg.jpg');
+<StyleBase />
+
+<script>
 	
-
-	}
-	
-	html[data-theme='light'] {
-    --background-color: #fff;
-    --text-color: #121416d8;
-    --link-color: #543fd7;
-    --link-active-color: #005e1c;
-
-	}
-
-	html[data-theme='dark'] {
-    --background-color: #212a2e;
-    --text-color: #F7F8F8;
-    --link-color: #828fff;
-	--link-active-color: #95ffb5;
-
-	}
-
-	html[data-theme='salmon'] {
-    --background-color: #155e7e;
-    --text-color: #ffe881;
-    --link-color: #776b00;
-	--link-active-color: #676e4e;
-
-	}
-
-	body{
-		font-family: sans-serif;
-		font-size: 1em;
-		position: relative;
-		background-color: var(--background-color);
-		color: var(--text-color);
-	}
-	a{
-		color:var(--link-color) ;
-	}
-	a.active{
-		color: var(--link-active-color);
-	}
-
-
-	.tx2 {font-size: clamp( 3.4em, 6vw, 9em );}
-	.tx1 {font-size: clamp( 2.4em, 4.2vw, 7em );}
-	h1, h2, h3, h4, h5, h6{ @apply leading-1.2em;}
-	  /* font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );  font-size: clamp( 2.4em, 4.2vw, 6.4em ); */
-	h1{@apply text-2em sm:text-2.0vw lg:text-3.0vw ;} 
-	h2{@apply text-1.8em lg:text-2.4vw ;}
-	h3{@apply text-1.6em lg:text-1.9vw font-500 ;}
-	h4{@apply text-1.4em lg:text-1.6vw font-500 ;}
-	h5{@apply text-1.2em lg:text-1.4vw font-500 ;}
-	h6{@apply text-1.1em lg:text-1.2vw font-500 ;}
-
-	.container{@apply mx-auto w-82vw md:w-92vw xl:w-78vw  ;}
-	a{color: var(--brand); font-weight:500; }	
-	a:hover{ color: var(--brand-gray)  ;}
-
-	
-	.stands {
-        @apply min-h-95vh pt-20vh lg:pt-10vh grid ic bg-brand-light   ;
-    }
-    .title-page{ @apply text-6vw md:text-4vw lg:text-4vw bg-brand-base text-brand-light px-4 mb-4 ;}
-	
-	.icon-right{  @apply w-40vw sm:w-40vw md:w-25vw bottom-1 md:top-5vh h-auto absolute right-0 z-1 animate-back-in-right delay-700 ;   }
-	.icon-left{
-        @apply w-35vw lg:w-28vw h-auto absolute -bottom-18 lg:top-12 z-2 animate-back-in-left ;  
-    }
 	
 
 
-	
-</style>
+	// Detectar tema 
 
+
+</script>

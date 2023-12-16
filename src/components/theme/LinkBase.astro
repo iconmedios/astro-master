@@ -17,8 +17,10 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 		display: inline-block;
 		text-decoration: none;
 		text-transform: uppercase;
-		color: darkgrey;
+		
+		transition: all 0.3s ease-out allow-discrete;
 	}
+	a:hover{ padding: 0 2px;}
 	a.active {
 		font-weight: bolder;
 		

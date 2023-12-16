@@ -1,0 +1,106 @@
+---
+// import { title, parraf} from "/textos.ts";
+
+const txt = {
+    th1: "Neque porro quisquam est.",
+    th2: "At vero eos et accusamus et iusto odio dignissimos",
+    th3: "Nemo enim ipsam voluptatem ",
+    th4: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    th5: "Et harum quidem rerum facilis est et expedita distinctio",
+    th6:" Quis autem vel eum iure"
+}
+
+const pa = {
+    x1:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    x2:"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,",
+    x3:"fficiis quasi eius eaque iusto, id consequuntur veritatis in libero hic inventore asperiores laboriosam distinctio quidem quam voluptas quia iure nulla perspiciatis officia nemo beatae voluptatum quaerat? Blanditiis?",
+    x4:"Sint officiis delectus quos dolore veritatis accusamus iure aliquam nisi dignissimos molestiae possimus totam mollitia dolorem, blanditiis ducimus voluptas facere. Eveniet, exercitationem.",
+    x5:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum fuga cumque incidunt ullam voluptate culpa nostrum distinctio consequatur nisi natus voluptas provident, consequuntur eligendi tempora quas qui asperiores! Nostrum",
+    x6:"Quasi eius eaque iusto, id consequuntur veritatis in libero hic inventore asperiores laboriosam distinctio quidem quam voluptas quia iure nulla perspiciatis officia nemo beatae voluptatum quaerat? Blanditiis?",
+
+}
+
+
+
+---
+
+<section class="seccion-base bg-zinc-100">
+    <div class="container">
+        <h1>{txt.th1}</h1>
+        <h2>{txt.th2}</h2>
+        <h3>{txt.th3}</h3>
+        <h4>{txt.th4}</h4>
+        <h5>{txt.th5}</h5>
+        <h6>{txt.th6}</h6>
+    </div>
+</section>
+
+<section class="seccion-base">
+    <div class="container">
+        <div class="row grid lg:grid-cols-2 gap-10">
+            <div>
+                <h2>{txt.th3}</h2>
+                <p>{pa.x2} </p>
+            </div>
+            <div>
+                <h2>{txt.th2}</h2>
+                <p>{pa.x3} </p> 
+            </div>
+        </div>
+        <div class="row grid lg:grid-cols-2 gap-10">
+            <div>
+              
+                <p>{pa.x2} {pa.x3} {pa.x2}</p>
+            </div>
+            <div>
+            
+                <p>{pa.x3} {pa.x2} {pa.x2} </p> 
+            </div>
+        </div>
+    </div>
+    <h3></h3>
+    <p></p>
+</section>
+
+<section  class="seccion-base bg-zinc-1" >
+    <div class="container">
+        <div class="grid lg:grid-cols-3 gap-10">
+            <div>
+                <h3>{txt.th1}</h3>
+                <p>{pa.x2}</p>
+            </div>
+            <div>
+                <h3>{txt.th5}</h3>
+                <p>{pa.x3}</p>
+            </div>
+            <div>
+                <h3>{txt.th6}</h3>
+                <p>{pa.x4}</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section  class="seccion-base">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <h4></h4>
+                <p></p>
+            </div>
+            <div>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
