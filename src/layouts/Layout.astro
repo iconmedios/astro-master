@@ -6,6 +6,7 @@ import Footer from "@components/Footer.astro";
 
 import SEO from "@components/SEO.astro";
 import type { Props as SEOProps } from "@components/SEO.astro";
+import ThemeSwicher from "@components/theme/ThemeSwicher.astro";
 
 export interface Props {
 	seo?: SEOProps;
@@ -15,29 +16,20 @@ const { seo } = Astro.props;
 ---
 
 <!doctype html >
-<html lang="es" >
+<html lang="es" data-theme="ligth">
 	<head>
 		<SEO {...seo} />
 	</head>
-	<body data-theme="light">
+	<body >
 		<Header />
 		<main>
 			<slot />
 		</main>
 		<Footer />
+		<ThemeSwicher />
 
 		<script src="../app.js"></script>
 		<script is:inline src="/assets/js/fslightbox.js"></script>
 	</body>
 </html>
 <StyleBase />
-
-<script>
-	
-	
-
-
-	// Detectar tema 
-
-
-</script>

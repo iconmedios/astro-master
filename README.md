@@ -28,7 +28,7 @@ Esto cambia cualquier imagen al tamaño de la proporción
 object-cover aspect-2/4
 
 ### Tamaños Fuente UNOCSS
-
+````
 text-xs	    0.75rem (12px)
 text-sm	    0.875rem (14px)
 text-base	1rem (16px)
@@ -39,7 +39,8 @@ text-3xl	1.875rem (30px)
 text-4xl	2.25rem (36px)
 text-5xl	3rem (48px)
 text-6xl	4rem (64px)
-
+'''
+````
 ### Animaciones
 
 animate-fade-in  
@@ -50,12 +51,12 @@ ease-out duration-300
 ### Imagen de fondo resposiva 
 
 Definir la altura full hace que se adapte perfectamente. tambien se peuden definir otros formatos
-
+```
 <picture>
     <source  media="(max-width: 900px)" srcset="/assets/images/imagen-mobil.webp"> 
     <img class="absolute z-0 object-cover h-full" src="/assets/images/imagen-grande.webp" alt="" width="1980" height="1100">
 </picture>
-
+```
 ### Sistema de colores
 
 :root,

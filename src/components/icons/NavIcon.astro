@@ -1,0 +1,32 @@
+<script>
+    document.querySelectorAll
+</script>
+
+
+<button class="active w-32px bg-blue relative">
+<span class="block h-8px hover:h-12px"></span>
+</button>
+
+
+<style>
+ 
+
+button::before, button::after{
+    transition: all ease-in 1s ;
+    content: "";
+    height: 4px;
+    display: block;
+    background-color: black;
+}
+button.active::before { 
+   
+
+    transform: rotate(45deg);
+}
+button.active::after { 
+    transform: rotate(-45deg);
+}
+
+
+
+</style>    

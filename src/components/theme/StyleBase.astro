@@ -13,24 +13,39 @@
 	}
 	
 	[data-theme='dark'] {
-        --background-color: #212a2e;
-        --text-color: #dbdbdb;
-        --link-color: #828fff;
-	    --link-active-color: #95ffb5;
+        --background-color: #1a1a1a;
+        --text-color: #cac9c9;
+        --link-color: #a8acd4;
+	    --link-active-color: #b3b2ff;
 		--contrast-color:#121416;
-		--pale-color:#2a3236;
+		--pale-color:#313233;
+		--surface-color:	#272727 ;  
 
 	}
 
 	[data-theme='salmon'] {
-        --background-color: #b6695b;
-        --text-color: #fffae5;
-        --link-color: #7e99f1;
-	    --link-active-color: #efffae;
-		--contrast-color:#121416;
-		--pale-color:#28789b;
+        --background-color:  #FCFCF5; 
+        --text-color:		 #5a4d45;
+        --link-color:		 #6e5241;
+	    --link-active-color: #413731;
+		--contrast-color:	 #d5bdaf;
+		--pale-color:		 #d6ccc2;
+		--surface-color:	 #EDEDE9;  
 
 	}
+	[data-theme='standout'] {
+        --background-color:  #c6eaf7; 
+        --text-color:		 #005d7c;
+        --link-color:		 #007DA5;
+	    --link-active-color: #007DA5;
+		--contrast-color:	 #0192c2;
+		--pale-color:		 #56a9c5;
+		--surface-color:	 #9ad7eb;  
+
+	}
+
+
+
 
 	body{
 		font-family: sans-serif;
@@ -50,7 +65,7 @@
 	.contrast a { color:var(--background-color) ;}
 	.contrast a:hover, .contrast a.active{ color:var(--background-color);} 
 	
-	/* COLOR ALTERNATIVO */
+	/* COLOR DONDE ALTERNATIVO */
 
 	.surface, .sticky {
 		color: var(--text-color) !important ;
@@ -67,9 +82,9 @@
 	
 
 	h1, h2, h3, h4, h5, h6{ @apply leading-1.2em;}
-	  /* font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );  font-size: clamp( 2.4em, 4.2vw, 6.4em ); */
-	h1{@apply text-2em lg:text-3em} 
-	h2{@apply text-1.8em lg:text-2.4vw ;}
+	  
+	h1{@apply text-2.2em lg:text-2.8vw ;  } 
+	h2{@apply text-1.8em lg:text-2.2vw ;}
 	h3{@apply text-1.6em lg:text-1.8vw;}
 	h4{@apply text-1.4em lg:text-1.6vw ;}
 	h5{@apply text-1.2em lg:text-1.4em  ;}
@@ -79,7 +94,8 @@
 
 
 	
-
-
-	
 </style>
+
+
+
+

@@ -14,19 +14,22 @@ export default defineConfig({
    ],
    theme:{
     colors:{
-      'tema':{
+      'mi':{
 
       'tx':'var(--text-color)', 
-      'bg':'var(--background-color', 
-      'gray':'var(--brand-gray)', 
-      'light':'var(--brand-light)', 
-      'dark':'var(--brand-negro)' 
+      'bg':'var(--background-color)', 
+      'brand':'var(--brand)', 
+      'secondary':'var(--secondary)', 
+      'surf':'var(--surface-color)', 
+      'pale':'var(--pale-color)', 
+      'link':'var(--link-color)' ,
+      'linka':'var(--link-active-color)', 
 
     }
   }},
   shortcuts:{
-    "container":"mx-auto w-90% xl:w-1194px ",
-    "seccion-base":"py-12 md:py-16 lg:py-28",
+    "container":"mx-auto w-86% xl:w-1194px ",
+    "seccion-base":"py-16 md:py-24 lg:py-36",
     "ic": "items-center",
     "icc":"items-center justify-center",
     "icb":"items-center justify-between",

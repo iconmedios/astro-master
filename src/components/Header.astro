@@ -1,6 +1,7 @@
 ---
 import MainMenu from '@components/theme/MainMenu.astro';
 import Logo from '@components/theme/Logo.astro';
+import NavIcon from './icons/NavIcon.astro';
 ---
 <header id="navbar"  >
 	<div class="container flex items-center justify-between ">
@@ -8,13 +9,14 @@ import Logo from '@components/theme/Logo.astro';
 		<nav id="nav-menu">
 			<div class="fondo-bar"></div> 
 			<MainMenu class="menu-navbar flex gap-4" />
-			
-		</nav>
+		<div class=""></div>
+		<NavIcon />
+	</nav>
 	</div>	
 </header>
 
 <style>
-	#navbar { @apply ease-out duration-300 z-2 fixed top-0 w-full -drop-shadow-md ;}
+	#navbar { @apply ease-out duration-300 z-2 fixed top-0 w-full -drop-shadow-md bg-mi-pale/60 ;}
 	#navbar .container { @apply h-16 lg:h-24;}
 	#navbar.sticky { @apply  ease-out duration-700 top-0 bg-zinc-50 	;}
 			
