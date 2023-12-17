@@ -1,5 +1,4 @@
 import { defineConfig, presetUno, presetIcons, transformerDirectives } from 'unocss'
-import type { Theme } from 'unocss/preset-uno'
 
 export default defineConfig({
 
@@ -15,7 +14,6 @@ export default defineConfig({
    theme:{
     colors:{
       'mi':{
-
       'tx':'var(--text-color)', 
       'bg':'var(--background-color)', 
       'brand':'var(--brand)', 
@@ -23,7 +21,7 @@ export default defineConfig({
       'surf':'var(--surface-color)', 
       'pale':'var(--pale-color)', 
       'link':'var(--link-color)' ,
-      'linka':'var(--link-active-color)', 
+      'lka':'var(--link-active-color)', 
 
     }
   }},

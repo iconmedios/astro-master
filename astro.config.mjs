@@ -13,5 +13,17 @@ export default defineConfig({
       ],
     prefetch: {
         defaultStrategy: 'viewport'
-    } 
+    },
+    vite: {
+        build: {
+          //Personalizar los nombres de los archivos generados
+          rollupOptions: {
+            output: {
+              entryFileNames: 'assets/js/app.[hash].js',
+              chunkFileNames: 'assets/js/astro.[hash].js',
+              assetFileNames: 'assets/css/style.[hash][extname]',
+            },
+          },
+        },
+      },
 });

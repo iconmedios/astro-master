@@ -3,7 +3,7 @@
 </script>
 
 
-<button class="active w-32px bg-blue relative">
+<button class="flex lg:hidden active w-32px h-32px bg-blue relative overflow-hidden ">
 <span class="block h-8px hover:h-12px"></span>
 </button>
 
@@ -12,19 +12,23 @@
  
 
 button::before, button::after{
+    position: absolute;
     transition: all ease-in 1s ;
     content: "";
-    height: 4px;
+    height: 3px;
     display: block;
     background-color: black;
+    transform-origin: center left;
+    left: 0;
+    
 }
-button.active::before { 
-   
-
-    transform: rotate(45deg);
+button.active::before {
+    top: 0;
+    transform: rotate(45deg); 
 }
 button.active::after { 
     transform: rotate(-45deg);
+    bottom: 0;
 }
 
 

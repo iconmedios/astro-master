@@ -1,4 +1,6 @@
 ---
+
+import IconTheme from "@components/theme/IconTheme.astro";
 import Layout from "@layouts/Layout.astro";
 
 const datapage = {
@@ -19,15 +21,14 @@ const seo = {
 			<h1 class="brand">{datapage.titlePage} Custom</h1>
 			<p>{datapage.description}</p>
 			</div>
+			<div>
+				<IconTheme />
+			</div>
 			
 		</div>
 	</section>
-	<section class="seccion-base pale">
-		<div class="container">
-			<h2>Surface Section</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-		</div>
-	</section>
+
+
 
 	<section class="seccion-base surface">
 		<div class="container">

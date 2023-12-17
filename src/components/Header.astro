@@ -3,28 +3,28 @@ import MainMenu from '@components/theme/MainMenu.astro';
 import Logo from '@components/theme/Logo.astro';
 import NavIcon from './icons/NavIcon.astro';
 ---
-<header id="navbar"  >
+<header id="navbar">
 	<div class="container flex items-center justify-between ">
 		<Logo class="logo" /> 
 		<nav id="nav-menu">
-			<div class="fondo-bar"></div> 
+			<!-- <div class="fondo-bar"></div>  -->
 			<MainMenu class="menu-navbar flex gap-4" />
-		<div class=""></div>
-		<NavIcon />
+		
 	</nav>
+	<NavIcon />
 	</div>	
 </header>
 
 <style>
-	#navbar { @apply ease-out duration-300 z-2 fixed top-0 w-full -drop-shadow-md bg-mi-pale/60 ;}
+	#navbar { @apply ease-out duration-300 z-2 fixed top-0 w-full  ;}
 	#navbar .container { @apply h-16 lg:h-24;}
-	#navbar.sticky { @apply  ease-out duration-700 top-0 bg-zinc-50 	;}
+	#navbar.sticky { @apply  ease-out duration-700 top-0	;}
 			
 	#navbar.sticky.base{ @apply bg-black ease-out duration-700 top-0 ; }
 	#navbar.sticky.ocultar{ @apply bg-black ease-out duration-300 -top-20 ;}
 	#navbar.sticky .container { @apply h-16 ease-out duration-300 ;}
 	
-	#nav-menu { @apply items-center hidden lg:flex justify-between text-white ;}
+	#nav-menu { @apply items-center hidden lg:flex justify-between;}
 	#nav-menu .fondo-bar { @apply hidden absolute left-0 w-screen h-16 -z-1; }
 
 	#navbar a .logo { @apply transition-all h-14 md:h-16 lg:h-24 ;}

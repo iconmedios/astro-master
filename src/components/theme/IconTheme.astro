@@ -1,0 +1,38 @@
+<style>
+  .conbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  margin: 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+</style>
+
+
+
+<button id="animateButton">Boton</button>
+<div class="box"></div>
+
+
+
+
+
+<script>
+    import { gsap } from "gsap";
+
+    const animateButton = document.getElementById('animateButton') as HTMLBodyElement
+    const box = document.querySelector('.box');
+
+    animateButton.addEventListener('click', function () {
+ // Utiliza GSAP para animar la propiedad de escala (scale) del elemento
+        gsap.to(box, { duration: .5, scale: 2, ease: 'power2.inOut' });
+    });
+
+
+</script>
