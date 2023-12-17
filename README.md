@@ -72,3 +72,7 @@ Definir la altura full hace que se adapte perfectamente. tambien se peuden defin
 --link-color:           #454964 ;
 --link-active-color:    #292929 ;
 --pale-color:           #b4b4b4 ;
+
+
+html rem 
+body em espacios 
