@@ -1,0 +1,50 @@
+---
+import { menus } from "@data/site.json"
+import MainMenu from '@components/theme/MainMenu.astro';
+const aviso = menus.legal[0];
+
+---
+<button id="button-open">MENU </button>
+<section id="nav-mobile" class="contrast">    
+    <div class="relative grid text-center z-8 ">
+        <div class="w-20 lg:w-10vw mx-auto "></div>
+        <MainMenu class="menu-mob" />   
+    
+  
+        <a class="block pt-6" href={aviso.link}> {aviso.name} </a>
+    </div>
+    <div class="w-100vw  absolute -z-0 top-90vh ">
+
+    </div>
+</section>
+
+<style>
+
+/* RIGHT - LEFT  */
+    #nav-mobile {@apply fixed lg:hidden top-0 left-100vw z-10 w-100vw 
+                         h-screen items-center grid overflow-hidden
+                         transition-all transition-duration-400 ;}
+ 
+    #nav-mobile.visible { @apply left-10vw w-90vw  animate-duration-400 z-20 ;}
+    
+    #button-open {@apply grid icc lg:hidden fixed right-0 top-0 z-5 bg-brand-gray h-16
+                         border-top-2 px-2
+                ;}
+/* TOP -> BOTTOM
+    #nav-mobile {@apply fixed lg:hidden w-100vw  bottom-100vh z-10 
+                         h-screen items-center grid overflow-hidden
+                         transition-all transition-duration-400 ;}
+ 
+    #nav-mobile.visible { @apply bottom-0vh left-0vw w-100vw  animate-duration-400 z-20 ;}
+    
+    #button-open {@apply grid icc lg:hidden fixed right-0 top-0 z-5 bg-brand-gray h-16
+                         border-top-2 px-2
+                ;}
+
+
+*/
+ 
+ </style>
+
+
+

@@ -1,46 +1,54 @@
 <style is:global>
+	html {
+  		scroll-behavior: smooth;
+		font-size:16px;
+	}
 	:root, [data-theme='light']  {
+
 	    --brand:		#007DA5 ;
   	    --secondary:	#E1251B ;
 	    --surface-color:	#e9e9e9 ;       
 		--background-color: #f7f7f7;
+		--contrast-color:#121416;
         --text-color: #454547;
-        --link-color: #454964;
+        --link-color: #3d46c2;
         --link-active-color: #292929;
-		--pale-color:#b4b4b4;
+		--pale-color:#dddddd;
 		
 
 	}
 	
 	[data-theme='dark'] {
+
+		--surface-color:	#272727 ;  
         --background-color: #1a1a1a;
+		--contrast-color:#121416;
         --text-color: #cac9c9;
         --link-color: #a8acd4;
 	    --link-active-color: #b3b2ff;
-		--contrast-color:#121416;
 		--pale-color:#313233;
-		--surface-color:	#272727 ;  
 
 	}
 
 	[data-theme='salmon'] {
+		--surface-color:	 #EDEDE9;  
         --background-color:  #FCFCF5; 
+		--contrast-color:	#302017;
         --text-color:		 #5a4d45;
         --link-color:		 #6e5241;
 	    --link-active-color: #413731;
 		--contrast-color:	 #d5bdaf;
 		--pale-color:		 #d6ccc2;
-		--surface-color:	 #EDEDE9;  
 
 	}
 	[data-theme='standout'] {
+		--surface-color:	 #9ad7eb;  
         --background-color:  #c6eaf7; 
+		--contrast-color:	 #0192c2;
         --text-color:		 #005d7c;
         --link-color:		 #007DA5;
 	    --link-active-color: #007DA5;
-		--contrast-color:	 #0192c2;
 		--pale-color:		 #56a9c5;
-		--surface-color:	 #9ad7eb;  
 
 	}
 
@@ -74,7 +82,9 @@
 		background-color:var(--surface-color) !important  ;
 
 	}
-	.surface a { color:var(--background-color) ;}
+	.surface a { 
+		color:var(--background-color) 
+		;}
 	.surface a:hover, .surface a.active{ color:var(--background-color);} 
 	
 
@@ -86,12 +96,12 @@
 
 	h1, h2, h3, h4, h5, h6{ @apply leading-1.2em;}
 	  
-	h1{@apply text-2.2em lg:text-2.8vw ;  } 
-	h2{@apply text-1.8em lg:text-2.2vw ;}
-	h3{@apply text-1.6em lg:text-1.8vw;}
-	h4{@apply text-1.4em lg:text-1.6vw ;}
-	h5{@apply text-1.2em lg:text-1.4em  ;}
-	h6{@apply text-1em lg:text-1.2em;}
+	h1{@apply text-8 lg:text-10 ;} 
+	h2{@apply text-7 lg:text-8 ;}
+	h3{@apply text-6 lg:text-6;}
+	h4{@apply text-5 lg:text-5 ;}
+	h5{@apply text-4 lg:text-4.6  ;}
+	h6{@apply text-3.8;}
 
 
 

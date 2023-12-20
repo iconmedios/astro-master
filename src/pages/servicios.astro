@@ -1,4 +1,5 @@
 ---
+import DetailsSummary from "@components/widgets/DetailsSummary.astro";
 import LayoutPage from "@layouts/LayoutPage.astro";
 
 const datapage = {
@@ -17,6 +18,8 @@ const seo = {
 		<div class="container">
 			<h2>{datapage.titlePage} Custom</h2>
 			<p>{datapage.description}</p>
+			<DetailsSummary />
 		</div>
 	</section>
 </LayoutPage >
+

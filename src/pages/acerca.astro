@@ -1,4 +1,5 @@
 ---
+import SectionNavigator from "@components/widgets/SectionNavigator.astro";
 import LayoutPage from "@layouts/LayoutPage.astro";
 
 const datapage = {
@@ -13,27 +14,37 @@ const seo = {
 ---
 
 <LayoutPage  {seo} titlepage={datapage.titlePage} subtitle={datapage.description}  >
-	<section class="seccion-base pale" >
+
+	<section id="uno" class="seccion-base pale" >
 		<div class="container">
 			<h3>Pale</h3>	
 		</div>
 		</div>
 	</section>
-	<section class="seccion-base contrast" >
+	<section id="dos" class="seccion-base contrast" >
 		<div class="container">
 			<h3>Contrast</h3>	
 		</div>
 	</section>
 	<section class="seccion-base surface" >
 		<div class="container">
-			<h3>Surface</h3>	
+			<h3>Surface</h3>
+			<a href="#page-head">Subir</a>	
 		</div>
 	</section>
 	
-	<section class="seccion-base" >
+	<section id="tres" class="seccion-base" >
 		<div class="container">
 			<h3>Normal</h3>	
+			<a href="#navbar">Subir</a>	
 		</div>
 	</section>
+
+
 	
 </LayoutPage>
+<SectionNavigator>
+    <a href="#uno"><span>uno</span> </a>
+        <a href="#dos"><span>uno</span></a>
+        <a href="#tres"><span>uno</span></a>
+</SectionNavigator>

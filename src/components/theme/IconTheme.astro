@@ -26,13 +26,23 @@
 <script>
     import { gsap } from "gsap";
 
+    animarCuadro();
+
+    function animarCuadro (){
+
     const animateButton = document.getElementById('animateButton') as HTMLBodyElement
     const box = document.querySelector('.box');
 
+    gsap.context(() => {
     animateButton.addEventListener('click', function () {
- // Utiliza GSAP para animar la propiedad de escala (scale) del elemento
-        gsap.to(box, { duration: .5, scale: 2, ease: 'power2.inOut' });
+    // Utiliza GSAP para animar la propiedad de escala (scale) del elemento
+        gsap.to(box, { rotation: "+=360" });
+    });
+   
     });
 
+  }
+
+  
 
 </script>

@@ -9,28 +9,3 @@
         @apply block w-2 h-8 cursor-crosshair ;
     }
 </style>
-<script>
-	
-   const mainTheme = document.querySelector('[data-theme]') as HTMLBodyElement;
-   const themeBtns = document.querySelectorAll('.theme-btn');
-   
-   // Obtener el tema almacenado en localStorage al cargar la página
-   const storedTheme = localStorage.getItem('selectedTheme');
-   if (storedTheme) {
-       mainTheme.setAttribute('data-theme', storedTheme);
-   }
-   
-   themeBtns.forEach((themeBtn) => {
-       themeBtn.addEventListener('click', () => {
-           const nameTheme = themeBtn.getAttribute('name-theme');
-           if (nameTheme) {
-               // Establecer el tema en el atributo 'data-theme'
-               mainTheme.setAttribute('data-theme', nameTheme);
-   
-               // Almacenar el tema seleccionado en localStorage
-               localStorage.setItem('selectedTheme', nameTheme);
-           }
-       });
-   });
-    
-</script>

@@ -1,0 +1,72 @@
+<div class="fixed top-0 right-0 h-full my-auto pr-3 flex ic">
+    <div class="section-navigation">
+    <slot></slot>
+    </div>
+</div>
+
+<style is:global>
+    .section-navigation a {
+        @apply relative block w-2 h-6 bg-mi-brand mb-1 transition-all;
+    }
+    .section-navigation a span {
+        @apply hidden absolute right-3 top-0 bg-white px-2 transition-all font-bold;
+    }
+    .section-navigation a:hover span {
+        @apply block;
+    }
+    a[data-current="true"]{
+        @apply bg-orange ;
+    }
+    section[data-current="true"]{
+        @apply border-  ;
+    }
+    
+</style>
+
+
+<script>
+
+const sectionsAndAnchors = document.querySelectorAll("section[id], .section-navigation a[href]");
+
+sectionsAndAnchors.forEach((element) => {
+  if (element instanceof HTMLAnchorElement) {
+    // Manejar el clic en el enlace
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Remover el atributo "current" de todos los enlaces y secciones
+      sectionsAndAnchors.forEach((el) => {
+        el.removeAttribute('data-current');
+      });
+
+      // Agregar el atributo "current" al enlace actual y a la sección correspondiente
+      this.setAttribute('data-current', 'true');
+
+      const hrefValue: string | null = this.getAttribute('href');
+      if (hrefValue) {
+        const correspondingSectionId = hrefValue.substring(1);
+        const correspondingSection = document.getElementById(correspondingSectionId);
+
+        if (correspondingSection) {
+          correspondingSection.setAttribute('data-current', 'true');
+        }
+      }
+
+      // Realizar cualquier otra acción que desees al hacer clic en el enlace
+      // console.log('Enlace clicado');
+    });
+
+    const hrefValue: string | null = element.getAttribute('href');
+    if (hrefValue) {
+      console.log(hrefValue);
+    }
+  } else if (element instanceof HTMLElement) {
+    const idValue: string | null = element.getAttribute('id');
+    if (idValue) {
+      console.log(idValue);
+    }
+  }
+});
+
+
+</script>
